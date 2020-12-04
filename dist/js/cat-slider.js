@@ -61,7 +61,7 @@ class LongcatRange {
 		if (this.value)
 			this.value.textContent = this.el.value;
 
-		if (this.value.textContent == 100) {
+		if (this.value.textContent === '100') {
 			modalContainer.classList.add('modal-bg-active');
 		}
 	}
@@ -73,6 +73,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	let  tacgnol2 = new LongcatRange("#tacgnol2", true);
 });
 
-modalContainer.addEventListener('click', () => {
+modalButton.addEventListener('click', () => {
 	modalContainer.classList.remove('modal-bg-active');
 });
